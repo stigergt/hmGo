@@ -1,0 +1,69 @@
+body {
+    font-size: 24px;
+    font-family: monospace;
+}
+
+.red, .green, .blue {
+    color: white;
+    border-radius: 7px;
+}
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+label {
+    text-decoration: underline;   
+}
+
+label[for="green"] {
+    color: green;
+}
+
+label[for="red"] {
+    color: red;
+}
+
+label[for="blue"] {
+    color: blue;
+}
+
+input {
+    display: none;
+}
+
+#red:checked ~ label[for="red"] {
+    color : lightcoral;
+}
+
+#blue:checked ~ label[for="blue"] {
+    color : lightblue;
+}
+
+#green:checked ~ label[for="green"] {
+    color : lightgreen;
+}
+
+#red:checked ~ .red {
+    display: none;
+    
+}
+
+#green:checked ~ .green {
+    display: none;
+}
+
+#blue:checked ~ .blue {
+    display: none;
+}
+
+
+
+
